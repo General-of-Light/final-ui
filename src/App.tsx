@@ -42,7 +42,7 @@
   const [snackbarMessage, setSnackbarMessage] = useState<string | null>(null);
   const [editMode, setEditMode] = useState(false);
 
-  const apiUrl = "http://localhost:8080/basilio/posts";
+  const apiUrl = "https://final-api-pf8l.onrender.com/basilio/posts";
 
   useEffect(() => {
   fetchPosts();
