@@ -1,0 +1,42 @@
+/* App.css (or index.css) */
+body {
+  display: flex;
+  justify-content: center; /* Center content horizontally */
+  align-items: flex-start; /* Align items to the top */
+  min-height: 100vh; /* Ensure the body takes at least the full viewport height */
+  margin: 0; /* Remove default body margin */
+  background-color: #f0f2f5; /* Optional: Match the background color */
+}
+
+#root {
+  width: 100%; /* Allow the root div to take full width */
+  display: flex;
+  flex-direction: column; /* Arrange children vertically */
+  align-items: center; /* Center children horizontally */
+  /* You might want to add a max-width here to prevent content from stretching too wide on large screens */
+  /* max-width: 1200px; */
+}
+
+.posts-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center; /* Center the posts within the container */
+  gap: 16px;
+  margin-top: 20px;
+  width: 100%; /* Make the container take full width of its parent */
+  max-width: 600px; /* Limit the width of the post container */
+}
+
+.post-item {
+  width: 100%;
+}
+
+.post-card {
+  display: flex;
+  flex-direction: column;
+}
+
+.post-image {
+  width: 100%;
+  object-fit: cover;
+}
